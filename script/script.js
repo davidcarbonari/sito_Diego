@@ -30,6 +30,24 @@ document.addEventListener("DOMContentLoaded",
 
             })
         })
+
+        //faccio funzionare tutti i bottoni di scorrimento dei progetti
+        const prevBtnPrj = document.querySelector('.sx-prj');
+        const nextBtnPrj = document.querySelector('.dx-prj');
+        const prjContainers = document.querySelector('.collab');
+        nextBtnPrj.addEventListener('click', function () {
+            prjContainers.style.overflowX = "scroll";
+            const prj = document.querySelector('.project');
+            prjContainers.scrollLeft += prj.clientWidth;
+        })
+        prevBtnPrj.addEventListener('click', function () {
+            prjContainers.style.overflowX = "scroll";
+            const prj = document.querySelector('.project');
+            prjContainers.scrollLeft -= prj.clientWidth;
+        })
+
+
+
         //faccio funzionare tutti i bottoni di scorrimento
         const prevBtn = document.querySelectorAll('.button-sx');
         const nextBtn = document.querySelectorAll('.button-dx');
