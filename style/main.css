@@ -1,0 +1,597 @@
+* {
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  background-color: whitesmoke;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-style: italic;
+  text-align: center;
+}
+
+/*barra social*/
+#social {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 4em;
+  padding: 1em;
+  position: fixed;
+  z-index: 3;
+}
+
+#social div {
+  float: right;
+}
+
+#social img {
+  display: block;
+  width: 50%;
+}
+
+/*barra social fine*/
+
+/*menù*/
+#burgerDiv {
+  float: left;
+  width: 3em;
+}
+
+#closeMenu {
+  float: right;
+}
+
+#close {
+  width: 2.5em;
+  border: none;
+  background-color: transparent;
+  margin: 1em;
+}
+
+#closeMenu img {
+  width: 100%;
+}
+
+#burger {
+  width: 2.7em;
+  border: none;
+  background-color: transparent;
+}
+
+#burger img {
+  width: 100%;
+}
+
+#burgerMenu {
+  /*  border: 2px solid black; */
+
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+  text-align: left;
+}
+
+.deactiveMenu {
+  position: fixed;
+  top: -100%;
+  transition: 0.5s;
+}
+
+.activeMenu {
+  position: fixed;
+  top: 4em;
+  max-width: 1200px;
+  border-radius: 0.5em;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+#burgerMenu li {
+  padding: 2em 0;
+  padding-left: 25%;
+}
+
+#burgerMenu ul {
+  padding: 0;
+}
+
+.linkMenu {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+/**/
+header {
+  z-index: -1;
+  position: relative;
+  margin: 3.5em 0;
+}
+
+#sfondo {
+  position: fixed;
+  top: 4em;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#sfondo img {
+  width: 100%;
+  height: auto;
+  filter: opacity(70%);
+}
+
+#title {
+  text-align: right;
+  padding: 10% 10% 0 10%;
+}
+
+#title h1 {
+  margin-bottom: 0;
+}
+
+#title p {
+  margin-top: 0;
+}
+
+#logo {
+  text-align: right;
+  margin-top: 0;
+  margin-right: 9%;
+}
+
+#bio {
+  padding: 1em;
+  padding-bottom: 1em;
+}
+
+.botton {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  background-color: whitesmoke;
+}
+
+.botton1 {
+  text-decoration: none;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  padding: 0.5em 1em;
+  background-color: black;
+  display: block;
+  text-align: center;
+  min-width: 10em;
+}
+
+.learn_more {
+  text-align: center;
+  min-height: 3em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+#youtubeBotton,
+#soundcloudBotton,
+#spotifyBotton {
+  min-height: 3em;
+  padding: 1em;
+}
+
+#multimediaBottons {
+  padding-left: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2em;
+}
+
+.botton:active {
+  background-color: #535353;
+  color: white;
+}
+
+.botton1:active {
+  background-color: #535353;
+  color: white;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+#bio_testo {
+  width: 100%;
+  float: left;
+}
+
+#didattica_testo {
+  width: 100%;
+  float: left;
+}
+
+#bio_img {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  display: none;
+}
+
+#didattica_img {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
+#didattica_img img {
+  display: none;
+}
+
+.titoli h2 {
+  display: inline;
+}
+
+.elenco {
+  width: 3em;
+}
+
+.elenco1 {
+  width: 3em;
+  transform: scaleX(-1);
+}
+
+.titoli {
+  text-align: center;
+}
+
+#multimedia {
+  clear: both;
+  /* padding-top: 2em; */
+}
+
+#multimediaImg {
+  padding-top: 2em;
+  position: relative;
+}
+
+#multimediaImg img {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+#progetti,
+#didattica,
+#recensioni,
+#discografia,
+#contatti {
+  padding: 2em;
+}
+
+/*progetti Diego*/
+
+#progetti p {
+  text-align: center;
+}
+
+.slider {
+  overflow: hidden;
+  clear: both;
+}
+
+h4 {
+  text-align: center;
+}
+
+.button {
+  border-radius: 100%;
+  border: none;
+  width: 3em;
+  height: 3em;
+  font-size: medium;
+}
+
+.button:hover {
+  background-color: #ccc;
+  /* border: 1px solid black; */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.projects-container,
+.disk-containers {
+  clear: both;
+  overflow-x: hidden;
+}
+
+.disk-container h3,
+.button-container {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.button-container {
+  display: none;
+}
+
+.projects,
+.disks {
+  display: flex;
+  clear: both;
+  margin-bottom: 3em;
+}
+
+.project {
+  min-width: 95%;
+  padding: 0 1em;
+  float: left;
+}
+
+.disk {
+  min-width: 95%;
+  float: left;
+  padding: 0 1em;
+}
+
+.disk img {
+  width: 100%;
+}
+
+.project h4 {
+  height: 3.5em;
+  margin-bottom: 0;
+}
+
+.list {
+  text-align: left;
+  margin-left: 0;
+  list-style-type: disc;
+}
+
+.list li {
+  margin: 0;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.autore {
+  font-style: italic;
+}
+/*slider recensioni*/
+
+.slider-container {
+  background-color: whitesmoke;
+  text-align: center;
+  overflow-x: hidden;
+  margin: 2em;
+}
+
+#slides {
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  overflow: visible;
+}
+.slide-recensioni {
+  min-width: 100%;
+}
+iframe {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+/* ------------- */
+#contatti_testo {
+  border: 1px solid black;
+  padding: 2em;
+
+  border-radius: 15px;
+}
+#contatti a {
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  float: right;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width: 780px) {
+  body {
+    background-color: white;
+  }
+
+  #bio {
+    padding: 3em 0;
+  }
+
+  #bio_img {
+    width: 30%;
+    float: right;
+    padding-right: 0;
+    padding-top: 1.4em;
+    display: block;
+  }
+
+  #bio_testo {
+    width: 60%;
+    float: left;
+    padding-left: 1em;
+  }
+
+  #bio_testo p {
+    padding-top: 0;
+  }
+
+  #didattica_img {
+    padding-right: 0;
+    padding-top: 1.4em;
+  }
+
+  #didattica_img {
+    display: block;
+    text-align: center;
+  }
+  iframe {
+    width: 560px;
+    height: 315px;
+    margin: auto;
+  }
+
+  #didattica_testo {
+    padding-left: 1em;
+    padding-top: 2em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #multimediaBottons {
+    padding-left: 75%;
+    padding-top: 5em;
+  }
+
+  #multimedia {
+    max-height: 550px;
+    overflow: hidden;
+  }
+
+  #multimediaImg {
+    display: block;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #close {
+    display: none;
+  }
+
+  #burgerMenu {
+    /*  border: 2px solid black; */
+
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+  }
+
+  #burgerDiv {
+    float: left;
+    width: 3em;
+  }
+
+  #closeMenu {
+    float: right;
+  }
+
+  #close {
+    width: 2.5em;
+    border: none;
+    background-color: transparent;
+    margin: 1em;
+  }
+
+  #closeMenu img {
+    width: 100%;
+  }
+
+  #burger {
+    width: 2.7em;
+    border: none;
+    background-color: transparent;
+  }
+
+  #burger img {
+    width: 100%;
+  }
+
+  #burgerMenu {
+    /*  border: 2px solid black; */
+
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+    background-color: whitesmoke;
+    text-align: center;
+  }
+
+  .deactiveMenu {
+    position: fixed;
+    top: 4em;
+  }
+
+  #burgerMenu div {
+    float: left;
+    width: 16.666%;
+  }
+
+  #burgerMenu li {
+    padding: 0 0;
+    width: calc(100% / 6);
+    float: left;
+  }
+
+  #burgerMenu ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #burgerMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #burgerMenu img {
+    display: none;
+  }
+
+  .project,
+  .disk {
+    min-width: calc(100% / 4);
+    max-width: calc(100% / 4);
+    padding: 1em;
+    float: left;
+  }
+
+  .button-container {
+    text-align: right;
+    display: block;
+  }
+}
